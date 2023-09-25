@@ -7,9 +7,13 @@ import "../styles/shop.css";
 
 import products from "../assets/data/products";
 import ProductLists from "../components/UI/ProductsList";
+// import useGetData from "../custom-hooks/useGetData";
+// import { db } from "../firebase.config";
+// import { doc, deleteDoc } from "firebase/firestore";
 
 const Shop = () => {
   const [productsData, setProductsData] = useState(products);
+  // const { data: productsData, loading } = useGetData("products");
 
   const handleFilter = (e) => {
     const filterValue = e.target.value;
